@@ -66,7 +66,6 @@ header{
  LOGO
 ==========================*/
 
-
 .logo{
 
     display:flex;
@@ -82,14 +81,15 @@ header{
     height:65px;
 
     border-radius:50%;
-
     overflow:hidden;
 
     background:#fff;
 
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.3);
 
 }
 
@@ -106,7 +106,6 @@ header{
 }
 
 
-
 .logo-text h2{
 
     color:#fff;
@@ -119,10 +118,7 @@ header{
 
     text-transform:uppercase;
 
-    line-height:1.2;
-
 }
-
 
 
 .logo-text p{
@@ -228,6 +224,7 @@ header{
 }
 
 
+
 /*==========================
  HERO
 ==========================*/
@@ -253,10 +250,9 @@ header{
 
     flex:1;
 
-    color:white;
+    color:#fff;
 
 }
-
 
 
 .hero-text h1{
@@ -270,7 +266,6 @@ header{
 }
 
 
-
 .hero-text p{
 
     font-size:18px;
@@ -278,7 +273,6 @@ header{
     margin-bottom:30px;
 
 }
-
 
 
 .hero-buttons{
@@ -290,7 +284,6 @@ header{
     flex-wrap:wrap;
 
 }
-
 
 
 .hero-image{
@@ -302,7 +295,6 @@ header{
 }
 
 
-
 .hero-image img{
 
     width:100%;
@@ -312,682 +304,5 @@ header{
     border-radius:20px;
 
     box-shadow:0 20px 50px rgba(0,0,0,.35);
-
-}
-
-
-
-/*==========================
- SECTION COMMON
-==========================*/
-
-
-section{
-
-    padding:90px 8%;
-
-}
-
-
-.section-title{
-
-    text-align:center;
-
-    margin-bottom:50px;
-
-}
-
-
-
-.section-title h2{
-
-    color:#003d99;
-
-    font-size:42px;
-
-}
-
-
-
-/*==========================
- ABOUT
-==========================*/
-
-
-.about-content{
-
-    max-width:1000px;
-
-    margin:auto;
-
-}
-
-
-.about-content p{
-
-    font-size:17px;
-
-    line-height:1.9;
-
-    margin-bottom:25px;
-
-    text-align:justify;
-
-}
-
-
-
-.about-content strong{
-
-    color:#003d99;
-
-}
-
-
-
-
-/*==========================
- SERVICES
-==========================*/
-
-
-.service-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:30px;
-
-}
-
-
-
-.card{
-
-    background:#fff;
-
-    border-radius:15px;
-
-    padding:35px;
-
-    text-align:center;
-
-    transition:.35s;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-
-
-.card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-
-
-.card i{
-
-    font-size:45px;
-
-    color:#ff9800;
-
-    margin-bottom:20px;
-
-}
-
-
-
-.card h3{
-
-    color:#003d99;
-
-    margin-bottom:15px;
-
-}
-
-
-
-/*==========================
- PORTFOLIO
-==========================*/
-
-
-.portfolio{
-
-    background:#f5f7fb;
-
-}
-
-
-
-.portfolio-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-    gap:35px;
-
-}
-
-
-
-.project{
-
-    background:#fff;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    padding-bottom:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-
-
-.project:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-
-.project img{
-
-    width:100%;
-
-    height:350px;
-
-    object-fit:contain;
-
-    padding:15px;
-
-    background:#fff;
-
-    display:block;
-
-}
-
-
-
-.project h3{
-
-    color:#003d99;
-
-    font-size:22px;
-
-    padding:20px 20px 10px;
-
-}
-
-
-
-.project p{
-
-    color:#555;
-
-    font-size:16px;
-
-    padding:0 20px;
-
-}
-
-
-
-/*==========================
- CONTACT
-==========================*/
-
-
-.contact{
-
-    background:#003d99;
-
-    color:#fff;
-
-    text-align:center;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-
-
-.contact .section-title h2{
-
-    color:#fff;
-
-}
-
-
-
-.contact h3{
-
-    font-size:28px;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.contact p{
-
-    font-size:18px;
-
-    margin:12px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:10px;
-
-}
-
-
-
-.contact i{
-
-    color:#ffb400;
-
-}
-
-
-
-.contact .btn{
-
-    margin-top:25px;
-
-}
-
-
-
-/*==========================
- FOOTER
-==========================*/
-
-
-footer{
-
-    background:#00173d;
-
-    color:#fff;
-
-    text-align:center;
-
-    padding:25px;
-
-}
-
-
-
-/*==========================
- TABLET RESPONSIVE
-==========================*/
-
-
-@media(max-width:992px){
-
-
-.navbar{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-
-.navbar ul{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-
-
-.hero{
-
-    flex-direction:column;
-
-    text-align:center;
-
-}
-
-
-
-.hero-text h1{
-
-    font-size:42px;
-
-}
-
-
-}
-
-
-
-
-/*==========================
- MOBILE RESPONSIVE
-==========================*/
-
-
-@media(max-width:768px){
-
-
-
-body{
-
-    overflow-x:hidden;
-
-}
-
-
-/* Navbar */
-
-
-.navbar{
-
-    padding:12px 5%;
-
-}
-
-
-
-.logo{
-
-    gap:10px;
-
-}
-
-
-
-.logo-circle{
-
-    width:55px;
-
-    height:55px;
-
-}
-
-
-
-.logo-text h2{
-
-    font-size:15px;
-
-}
-
-
-
-.logo-text p{
-
-    font-size:10px;
-
-}
-
-
-
-.navbar ul{
-
-    gap:12px;
-
-}
-
-
-
-.navbar ul li{
-
-    margin:0;
-
-}
-
-
-
-.navbar ul li a{
-
-    font-size:12px;
-
-}
-
-
-
-/* Hero */
-
-
-.hero{
-
-    padding:180px 5% 60px;
-
-    gap:30px;
-
-}
-
-
-
-.hero-text h1{
-
-    font-size:30px;
-
-}
-
-
-
-.hero-text p{
-
-    font-size:15px;
-
-}
-
-
-
-.hero-buttons{
-
-    flex-direction:column;
-
-}
-
-
-
-.btn,
-.btn2{
-
-    width:100%;
-
-    text-align:center;
-
-}
-
-
-
-.hero-image img{
-
-    max-width:320px;
-
-}
-
-
-
-/* Sections */
-
-
-section{
-
-    padding:60px 5%;
-
-}
-
-
-
-.section-title h2{
-
-    font-size:28px;
-
-}
-
-
-
-/* Services */
-
-
-.service-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.card{
-
-    padding:25px 20px;
-
-}
-
-
-
-/* Portfolio */
-
-
-.portfolio-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.project img{
-
-    height:230px;
-
-}
-
-
-
-.project h3{
-
-    font-size:18px;
-
-}
-
-
-
-.project p{
-
-    font-size:14px;
-
-}
-
-
-
-/* Contact */
-
-
-.contact h3{
-
-    font-size:22px;
-
-}
-
-
-
-.contact p{
-
-    font-size:14px;
-
-    flex-direction:column;
-
-}
-
-
-
-footer{
-
-    font-size:13px;
-
-}
-
-
-
-}
-
-
-
-/*==========================
- SMALL MOBILE
-==========================*/
-
-
-@media(max-width:480px){
-
-
-.logo-text h2{
-
-    font-size:13px;
-
-}
-
-
-
-.logo-text p{
-
-    font-size:9px;
-
-}
-
-
-
-.navbar ul li a{
-
-    font-size:11px;
-
-}
-
-
-
-.hero-text h1{
-
-    font-size:26px;
-
-}
-
-
-
-.section-title h2{
-
-    font-size:25px;
-
-}
-
-
-
-.project img{
-
-    height:200px;
-
-}
-
-
 
 }
