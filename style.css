@@ -1,5 +1,5 @@
 /*==========================
- GOOGLE FONT
+ GOOGLE FONT & RESET
 ==========================*/
 
 *{
@@ -10,11 +10,11 @@
     scroll-behavior:smooth;
 }
 
-
 body{
     background:#f5f7fb;
     color:#333;
     line-height:1.7;
+    overflow-x:hidden;
 }
 
 
@@ -35,7 +35,6 @@ header{
 }
 
 
-
 /*==========================
  NAVBAR
 ==========================*/
@@ -46,6 +45,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:18px 8%;
 
     position:fixed;
@@ -53,6 +53,7 @@ header{
     left:0;
 
     background:rgba(0,0,0,.45);
+
     backdrop-filter:blur(10px);
 
     z-index:999;
@@ -81,6 +82,7 @@ header{
     height:65px;
 
     border-radius:50%;
+
     overflow:hidden;
 
     background:#fff;
@@ -88,8 +90,6 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-
-    box-shadow:0 3px 12px rgba(0,0,0,.3);
 
 }
 
@@ -109,9 +109,7 @@ header{
 
 .logo-text h2{
 
-    margin:0;
-
-    color:#ffffff;
+    color:#fff;
 
     font-size:22px;
 
@@ -119,9 +117,9 @@ header{
 
     letter-spacing:1px;
 
-    line-height:1.2;
-
     text-transform:uppercase;
+
+    line-height:1.2;
 
 }
 
@@ -129,15 +127,11 @@ header{
 
 .logo-text p{
 
-    margin:3px 0 0;
-
-    color:#ffffff;
+    color:#fff;
 
     font-size:14px;
 
     font-weight:600;
-
-    letter-spacing:.5px;
 
 }
 
@@ -151,6 +145,7 @@ header{
 .navbar ul{
 
     display:flex;
+
     list-style:none;
 
 }
@@ -189,47 +184,13 @@ header{
 ==========================*/
 
 
-.btn{
-
-    display:inline-block;
-
-    padding:13px 30px;
-
-    background:#ffb400;
-
-    color:#001b4d;
-
-    border-radius:6px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-
-.btn:hover{
-
-    background:#fff;
-
-    transform:translateY(-3px);
-
-}
-
-
-
+.btn,
 .btn2{
 
     display:inline-block;
 
     padding:13px 30px;
 
-    background:#25D366;
-
-    color:#fff;
-
     border-radius:6px;
 
     text-decoration:none;
@@ -241,12 +202,30 @@ header{
 }
 
 
+.btn{
+
+    background:#ffb400;
+
+    color:#001b4d;
+
+}
+
+
+.btn2{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+
+.btn:hover,
 .btn2:hover{
 
     transform:translateY(-3px);
 
 }
-
 
 
 /*==========================
@@ -274,7 +253,7 @@ header{
 
     flex:1;
 
-    color:#fff;
+    color:white;
 
 }
 
@@ -339,7 +318,7 @@ header{
 
 
 /*==========================
- SECTIONS
+ SECTION COMMON
 ==========================*/
 
 
@@ -350,7 +329,6 @@ section{
 }
 
 
-
 .section-title{
 
     text-align:center;
@@ -358,6 +336,7 @@ section{
     margin-bottom:50px;
 
 }
+
 
 
 .section-title h2{
@@ -375,17 +354,35 @@ section{
 ==========================*/
 
 
-.about p{
+.about-content{
 
     max-width:1000px;
 
     margin:auto;
 
-    text-align:center;
+}
 
-    font-size:18px;
+
+.about-content p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+    text-align:justify;
 
 }
+
+
+
+.about-content strong{
+
+    color:#003d99;
+
+}
+
 
 
 
@@ -458,13 +455,13 @@ section{
  PORTFOLIO
 ==========================*/
 
-/*==========================
- PORTFOLIO SECTION
-==========================*/
 
 .portfolio{
+
     background:#f5f7fb;
+
 }
+
 
 
 .portfolio-grid{
@@ -479,21 +476,19 @@ section{
 
 
 
-/* Project Card */
-
 .project{
 
-    background:#ffffff;
+    background:#fff;
 
     border-radius:15px;
 
     overflow:hidden;
 
-    transition:.35s;
+    padding-bottom:20px;
 
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 
-    padding-bottom:20px;
+    transition:.3s;
 
 }
 
@@ -503,13 +498,9 @@ section{
 
     transform:translateY(-8px);
 
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
 }
 
 
-
-/* Full Image Display */
 
 .project img{
 
@@ -519,9 +510,9 @@ section{
 
     object-fit:contain;
 
-    background:#ffffff;
-
     padding:15px;
+
+    background:#fff;
 
     display:block;
 
@@ -529,15 +520,11 @@ section{
 
 
 
-/* Project Title */
-
 .project h3{
 
     color:#003d99;
 
     font-size:22px;
-
-    font-weight:600;
 
     padding:20px 20px 10px;
 
@@ -545,15 +532,11 @@ section{
 
 
 
-/* Project Description */
-
 .project p{
 
     color:#555;
 
     font-size:16px;
-
-    line-height:1.7;
 
     padding:0 20px;
 
@@ -561,33 +544,81 @@ section{
 
 
 
-/* Mobile Responsive */
-
-@media(max-width:768px){
-
-
-.portfolio-grid{
-
-    grid-template-columns:1fr;
-
-}
+/*==========================
+ CONTACT
+==========================*/
 
 
-.project img{
+.contact{
 
-    height:250px;
+    background:#003d99;
 
-}
+    color:#fff;
 
+    text-align:center;
 
-.project h3{
+    display:flex;
 
-    font-size:20px;
+    flex-direction:column;
+
+    align-items:center;
 
 }
 
 
+
+.contact .section-title h2{
+
+    color:#fff;
+
 }
+
+
+
+.contact h3{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.contact p{
+
+    font-size:18px;
+
+    margin:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+
+
+.contact i{
+
+    color:#ffb400;
+
+}
+
+
+
+.contact .btn{
+
+    margin-top:25px;
+
+}
+
+
+
 /*==========================
  FOOTER
 ==========================*/
@@ -608,27 +639,11 @@ footer{
 
 
 /*==========================
- RESPONSIVE
+ TABLET RESPONSIVE
 ==========================*/
 
 
 @media(max-width:992px){
-
-
-.hero{
-
-    flex-direction:column;
-
-    text-align:center;
-
-}
-
-
-.hero-text h1{
-
-    font-size:42px;
-
-}
 
 
 .navbar{
@@ -649,39 +664,149 @@ footer{
 }
 
 
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
 }
 
+
+
+.hero-text h1{
+
+    font-size:42px;
+
+}
+
+
+}
+
+
+
+
+/*==========================
+ MOBILE RESPONSIVE
+==========================*/
 
 
 @media(max-width:768px){
 
 
-.logo-text h2{
 
-    font-size:18px;
+body{
+
+    overflow-x:hidden;
 
 }
 
 
+/* Navbar */
+
+
+.navbar{
+
+    padding:12px 5%;
+
+}
+
+
+
+.logo{
+
+    gap:10px;
+
+}
+
+
+
+.logo-circle{
+
+    width:55px;
+
+    height:55px;
+
+}
+
+
+
+.logo-text h2{
+
+    font-size:15px;
+
+}
+
+
+
 .logo-text p{
+
+    font-size:10px;
+
+}
+
+
+
+.navbar ul{
+
+    gap:12px;
+
+}
+
+
+
+.navbar ul li{
+
+    margin:0;
+
+}
+
+
+
+.navbar ul li a{
 
     font-size:12px;
 
 }
 
 
+
+/* Hero */
+
+
+.hero{
+
+    padding:180px 5% 60px;
+
+    gap:30px;
+
+}
+
+
+
 .hero-text h1{
 
-    font-size:34px;
+    font-size:30px;
 
 }
 
 
-.section-title h2{
 
-    font-size:32px;
+.hero-text p{
+
+    font-size:15px;
 
 }
+
+
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
 
 
 .btn,
@@ -694,124 +819,175 @@ footer{
 }
 
 
-.hero-buttons{
 
-    justify-content:center;
+.hero-image img{
 
-}
-
+    max-width:320px;
 
 }
 
 
-/*==========================
- ABOUT SECTION
-==========================*/
 
-.about-content{
-    max-width:1000px;
-    margin:auto;
-}
+/* Sections */
 
 
-.about-content p{
-    font-size:17px;
-    line-height:1.9;
-    margin-bottom:25px;
-    text-align:justify;
-    color:#444;
-}
+section{
 
-
-.about-content strong{
-    color:#003d99;
-    font-weight:600;
-}
-
-/*==========================
- CONTACT SECTION CENTER
-==========================*/
-
-.contact{
-
-    background:#003d99;
-
-    color:#fff;
-
-    text-align:center;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    justify-content:center;
+    padding:60px 5%;
 
 }
 
 
-.contact .section-title h2{
 
-    color:#fff;
+.section-title h2{
+
+    font-size:28px;
 
 }
+
+
+
+/* Services */
+
+
+.service-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.card{
+
+    padding:25px 20px;
+
+}
+
+
+
+/* Portfolio */
+
+
+.portfolio-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.project img{
+
+    height:230px;
+
+}
+
+
+
+.project h3{
+
+    font-size:18px;
+
+}
+
+
+
+.project p{
+
+    font-size:14px;
+
+}
+
+
+
+/* Contact */
 
 
 .contact h3{
 
-    font-size:28px;
-
-    margin-bottom:25px;
+    font-size:22px;
 
 }
+
 
 
 .contact p{
 
-    margin:12px 0;
+    font-size:14px;
 
-    font-size:18px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:10px;
+    flex-direction:column;
 
 }
 
 
-.contact i{
-
-    color:#ffb400;
-
-    font-size:20px;
-
-}
-
-
-.contact .btn{
-
-    margin-top:25px;
-
-    display:inline-block;
-
-}
-
-
-/* Footer */
 
 footer{
 
-    background:#00173d;
+    font-size:13px;
 
-    color:#fff;
+}
 
-    text-align:center;
 
-    padding:25px;
+
+}
+
+
+
+/*==========================
+ SMALL MOBILE
+==========================*/
+
+
+@media(max-width:480px){
+
+
+.logo-text h2{
+
+    font-size:13px;
+
+}
+
+
+
+.logo-text p{
+
+    font-size:9px;
+
+}
+
+
+
+.navbar ul li a{
+
+    font-size:11px;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:26px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:25px;
+
+}
+
+
+
+.project img{
+
+    height:200px;
+
+}
+
+
 
 }
